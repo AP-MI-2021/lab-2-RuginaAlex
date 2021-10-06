@@ -54,15 +54,34 @@ def is_antipalindrome(n):
 
     return True
 
+
 def test_is_antipalindrome():
     assert test_is_antipalindrome(2783) == True
     assert test_is_antipalindrome(2773) == False
+
+
+def is_palindrome(n):
+    ogl=0
+    palindrom=n;
+    while n!=0:
+        ogl=ogl*10+n%10
+        n=n//10
+    if ogl==palindrom:
+        return True
+    else:
+        return False
+
+
+def test_is_palindrome():
+    assert is_palindrome(121) == True
+    assert is_palindrome(312) == False
 
 def main():
 
     while True:
         print('1. Transformare numar in baza 2 .')
         print('2. Este antipalindrom?')
+        print('3  Este Palindrom?')
         optiune=input('Alege optiunea:')
         if optiune == '1':
             n=int(input('Dati un numar'))
@@ -70,6 +89,9 @@ def main():
         elif optiune == '2':
             n =int(input('Dati un numar'))
             print(is_antipalindrome(n))
+        elif optiune== '3':
+            n=int(input('Dati un numar'))
+            print (is_palindrome(n))
         elif optiune == 'x':
             break
         else:
