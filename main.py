@@ -64,7 +64,7 @@ def is_palindrome(n):
     '''
     Verificam in aceasta functie daca un numar este palindrom
     :param n: Citim n
-    :return: Returnam prin bool daca numarul este palindrom sau nu 
+    :return: Returnam prin bool daca numarul este palindrom sau nu
     '''
     ogl=0
     palindrom=n;
@@ -103,5 +103,5 @@ def main():
             print('Optiune invalida.')
 
 
-
-main()
+if __name__ == '__main__':
+    main()
