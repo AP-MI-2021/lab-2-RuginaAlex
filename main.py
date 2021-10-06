@@ -61,6 +61,11 @@ def test_is_antipalindrome():
 
 
 def is_palindrome(n):
+    '''
+    Verificam in aceasta functie daca un numar este palindrom
+    :param n: Citim n
+    :return: Returnam prin bool daca numarul este palindrom sau nu 
+    '''
     ogl=0
     palindrom=n;
     while n!=0:
