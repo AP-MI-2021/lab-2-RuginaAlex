@@ -1,4 +1,9 @@
 def get_base_2(n):
+    '''
+    Algoritmul de schimbare a unui numar din baza 10 in baza 2
+    :param n:  Numarul citit
+    :return:   Returnam numarul in baza 2
+    '''
     r=0
     p=1
     nr=0
@@ -18,6 +23,8 @@ def test_get_base_2():
 def oglindit(n):
     '''
     Functie pentru a afla oglinditul unui numar.
+    :param n: Citim numarul caruia ii dorim oglinditul
+    :return: Returnam oglinditul numarului
     '''
 
     ogl=0
@@ -28,6 +35,11 @@ def oglindit(n):
 
 
 def is_antipalindrome(n):
+    '''
+    Aflam daca numarul este antipalindrom
+    :param n: Numarul citit
+    :return: Returnam prin bool daca numarul este antipalindrom sau nu
+    '''
     c1=0
     c2=0
     invers=oglindit(n)
